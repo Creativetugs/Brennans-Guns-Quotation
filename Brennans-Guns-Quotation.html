@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Tugs Quotation — Brennan's Guns</title>
+  <style>
+    :root {
+      --ink: #1c1c1c;
+      --muted: #4e4e4e;
+      --line: #eadfce;
+      --paper: #fbf6ee;
+      --gold: #8d5a16;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #efe6d8;
+      color: var(--ink);
+      font: 17px/1.45 "Segoe UI", Calibri, sans-serif;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      align-items: center;
+      padding: 0.7rem 1rem;
+      background: #1c1c1c;
+      color: #fff;
+    }
+    .toolbar p { margin: 0; font-size: 0.92rem; }
+    .toolbar button {
+      border: 0;
+      background: #fdbd5b;
+      color: #1c1c1c;
+      font: inherit;
+      font-weight: 700;
+      padding: 0.55rem 0.95rem;
+      cursor: pointer;
+    }
+    .page {
+      width: min(800px, calc(100% - 1.5rem));
+      margin: 1.2rem auto 2rem;
+      background: #fff;
+      padding: 2rem 2.1rem 2.3rem;
+    }
+    h1, h2 { font-family: Georgia, "Palatino Linotype", serif; line-height: 1.2; font-weight: 600; }
+    h1 { margin: 0.15rem 0 0.3rem; font-size: 2rem; }
+    h2 { margin: 1.35rem 0 0.35rem; padding-top: 0.85rem; border-top: 2px solid var(--line); font-size: 1.22rem; }
+    p { margin: 0.35rem 0; }
+    .kicker { margin: 0; color: var(--gold); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+    .meta { margin-top: 0.7rem; color: var(--muted); }
+    .meta strong { color: var(--ink); }
+    .prices { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.65rem; margin: 1rem 0 0.4rem; }
+    .prices div { background: var(--paper); padding: 0.75rem 0.8rem; }
+    .prices b { display: block; font-family: Georgia, serif; font-size: 1.7rem; line-height: 1; }
+    .prices span { color: var(--muted); font-size: 0.88rem; }
+    table { width: 100%; border-collapse: collapse; margin: 0.35rem 0; }
+    th, td { text-align: left; vertical-align: top; padding: 0.42rem 0.35rem; border-bottom: 1px solid var(--line); }
+    th { font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold); }
+    td.num, th.num { text-align: right; white-space: nowrap; }
+    tr.total td { font-weight: 700; background: #f8efdf; }
+    .yes, .maybe, .no {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding: 0.08rem 0.35rem;
+    }
+    .yes { background: #e5f2e2; color: #1d4a28; }
+    .maybe { background: #f8efdf; color: #6d4a12; }
+    .no { background: #f1f1f1; color: #444; }
+    ul { margin: 0.25rem 0 0.4rem; padding-left: 1.15rem; }
+    li + li { margin-top: 0.22rem; }
+    a { color: var(--gold); }
+    .box { background: var(--paper); padding: 0.75rem 0.9rem; margin-top: 0.5rem; }
+    @media (max-width: 700px) {
+      .page { padding: 1.15rem 0.9rem 1.4rem; }
+      .prices { grid-template-columns: 1fr; }
+      .toolbar { flex-direction: column; }
+    }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .page { width: auto; margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: none; }
+      h2, table, .box, .prices { break-inside: avoid; }
+      @page { size: letter; margin: 0.55in; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" onclick="window.print()">Print or save as PDF</button>
+    <p>In the print window, choose “Save as PDF”.</p>
+  </div>
+
+  <article class="page">
+    <p class="kicker">Quotation for your website request</p>
+    <h1>Brennan's Guns</h1>
+    <p class="meta">
+      <strong>For</strong> Brennan's Guns, Pawcatuck, Connecticut<br>
+      <strong>From</strong> Creative Tugs · Umara Imtiaz · 73 Fairfield St #219, Manchester, CT 06040<br>
+      <strong>Date</strong> 14 November 2026 · <strong>Good until</strong> 14 December 2026<br>
+      <strong>Phone</strong> (860) 356-3525 · (860) 610-8070 · <strong>Email</strong> info@creativetugs.com
+    </p>
+
+    <div class="prices">
+      <div><span>Build the website</span><b>$1,900</b></div>
+      <div><span>Name and hosting, each year</span><b>$180</b></div>
+      <div><span>Look after it, each month</span><b>$100</b></div>
+    </div>
+    <p>Three bills, not one lump sum. You pay $950 to start. When you approve the site, you pay the second $950 and the $180 together, and we put the site on the hosting and open it to the public. The $180 is due again each year. The $100 starts the month after launch. If you prefer to pay the monthly care for a whole year at once, that is $1,200.</p>
+    <p>The $180 covers hosting and the SSL certificate. Email is separate. A shop inbox on the hosting is $30 a year for each address. Three inboxes are $90 a year. If you want Gmail or Microsoft 365 instead, you open that account with Google or Microsoft and pay them. We can point the domain at it. If you already own the domain, for example at GoDaddy, you keep paying that company for the name unless you ask us to move it. That renewal is their bill. If the name is not registered yet, we register it in your name and the first year of the name is inside the $180. You own the name either way. Please tell us the name, and whether you already own it.</p>
+    <p>Words used below: <span class="yes">Included</span> is in the price shown. <span class="maybe">Optional</span> happens only if you say yes. <span class="no">Not included</span> is outside this quote.</p>
+
+    <h2>1. What this quote is</h2>
+    <p>You asked for a written quote to design, build, launch, and support one business website. This page answers your request, point by point. The site runs on WordPress and WooCommerce. You get the administrator login.</p>
+
+    <h2>2. Design and pages</h2>
+    <p><span class="yes">Included</span> in the $1,900. The site works on a computer, a tablet, and a phone. It uses your leprechaun logo and a historical American look, with a Second Amendment line. Before anyone can open the shop, they confirm they are old enough. You tell us the age to show. People who do not confirm stay on that screen. This is a confirmation, not a check of a driver’s license.</p>
+    <table>
+      <thead><tr><th>Page</th><th>What the visitor does</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Home</td><td>Sees the shop, the services, the phone, the address, and a way to write to you.</td><td><span class="yes">Included</span></td></tr>
+        <tr><td>About Us</td><td>Reads who Brennan's Guns is.</td><td><span class="yes">Included</span></td></tr>
+        <tr><td>Shop</td><td>Browses products with a photo, a description, and the details you give us.</td><td><span class="yes">Included</span></td></tr>
+        <tr><td>Firearms transfer services</td><td>Reads the steps and sends the transfer form, with papers attached.</td><td><span class="yes">Included</span></td></tr>
+        <tr><td>Contact Us</td><td>Sees the address, phone, hours, and email, and sends a message.</td><td><span class="yes">Included</span></td></tr>
+        <tr><td>Up to 5 more pages</td><td>Any extra page we agree in writing. The site can hold 10 pages.</td><td><span class="maybe">Optional · $150 each</span></td></tr>
+      </tbody>
+    </table>
+
+    <h2>3. Shop, forms, and the dashboard</h2>
+    <table>
+      <thead><tr><th>What you asked for</th><th>What you get</th><th class="num">Price</th></tr></thead>
+      <tbody>
+        <tr><td>Product catalog</td><td>You send the name, the price, and the photo for each item. We write the description. We enter up to 25 items. You add the rest after training.</td><td class="num">$450</td></tr>
+        <tr><td>Shopping cart and checkout</td><td>The cart is built. On launch day it is off. Section 4 says when a product can be paid online.</td><td class="num">$250</td></tr>
+        <tr><td>Transfer form</td><td>The customer can attach PDF, JPG, or PNG files. Up to 5 files, 10 MB each. The form collects the request. It does not run a background check.</td><td class="num">$350</td></tr>
+        <tr><td>Inquiry forms</td><td>A contact form and a second form for a callback. Both arrive in a shop mailbox.</td><td class="num">$150</td></tr>
+        <tr><td>Shop email</td><td>One inbox on the hosting is $30 a year. You hold the password. Gmail and Microsoft 365 are accounts you open yourself.</td><td class="num">$30 / year each</td></tr>
+        <tr><td>Dashboard</td><td>You can edit pages and products. One training session, up to 90 minutes, on Zoom or Google Meet.</td><td class="num">Included</td></tr>
+        <tr><td>A supplier’s catalog</td><td>Gallery of Guns or another distributor, only if that company allows it. If they say no, you pay nothing for this line.</td><td class="num">$750</td></tr>
+        <tr class="total"><td>Website build</td><td>$950 to start. $950 when you approve, plus the $180 hosting, and then we launch.</td><td class="num">$1,900</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Cards, guns, and the law</h2>
+    <p>I read the card companies’ own rules, and I looked at other Connecticut gun shops. A gun can be legal in your shop and still be refused by the card company. You remain responsible for Connecticut law and federal firearms rules.</p>
+    <table>
+      <thead><tr><th>Company</th><th>Guns</th><th>Ammunition</th><th>Parts, magazines, holsters</th></tr></thead>
+      <tbody>
+        <tr><td>PayPal</td><td>No</td><td>No</td><td>No for gun parts and many accessories</td></tr>
+        <tr><td>Square</td><td>No</td><td>No</td><td>No. Square treats a magazine as a gun part.</td></tr>
+        <tr><td>Shopify Payments</td><td>No</td><td>No</td><td>No. Holsters are on their list.</td></tr>
+        <tr><td>Stripe</td><td>Only if Stripe says yes in writing. They can refuse, and they can take a yes back.</td><td>Same rule until Stripe writes otherwise.</td><td>Suppressors are named. Other parts need the same written yes.</td></tr>
+      </tbody>
+    </table>
+    <p>I will not connect PayPal, Square, or Shopify Payments to this shop. Hats and shirts do not get around the rule. Those companies look at the gun shop, not at one hat.</p>
+    <p>The card box on a gun-shop website is a gateway. The bank account behind that gateway still has to approve a gun shop. Two gateways already in use on WooCommerce in Connecticut are Accept.blue and Authorize.Net.</p>
+    <ul>
+      <li><a href="https://thegunstorect.com/">The Gun Store, Waterbury</a> uses WooCommerce with Accept.blue. The buyer can pay by card on the site, then chooses an FFL dealer or in-store pickup. The gun is not handed over until that transfer is finished.</li>
+      <li><a href="https://www.thetacticalboutique.com/">The Tactical Boutique, West Hartford</a> main site uses WooCommerce with Authorize.Net. Their separate catalog address is blocked right now, so that catalog is not a working example today.</li>
+    </ul>
+    <p>We can connect Accept.blue or Authorize.Net after you have a merchant account that says yes to the products you want to charge for. Their card fee is paid to them, not to Creative Tugs. If they say no, the site stays on inquiry forms. That answer does not change the $1,900.</p>
+    <table>
+      <thead><tr><th>Item</th><th>On your site at launch</th><th>Online card payment</th></tr></thead>
+      <tbody>
+        <tr><td>Firearms</td><td>Shown, if you give us the details. The customer sends the transfer form and pays in the shop.</td><td>Only after a gun-shop payment company says yes. The gun still stays in your shop until you finish the transfer.</td></tr>
+        <tr><td>Ammunition</td><td>Shown. The customer inquires and pays in the shop.</td><td>Only if that company allows ammunition, and only for a buyer who meets Connecticut’s rules.</td></tr>
+        <tr><td>Parts, magazines, holsters</td><td>Shown. The customer inquires and pays in the shop.</td><td>Only if that company names those goods. Magazines over 10 rounds are not offered to a Connecticut customer.</td></tr>
+        <tr><td>Hats, shirts, and similar goods</td><td>Shown if you want them. Inquiry at launch.</td><td>Only if the written approval includes them.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Domain, hosting, email, and safety</h2>
+    <p>You own the domain name, and you get full administrator access. If the name is already registered, its yearly fee stays with that registrar unless you ask us to move the name. The $180 is the hosting and the SSL certificate. A new name, registered by us in your name, is included in the first $180. Email is not inside the $180.</p>
+    <table>
+      <thead><tr><th>Item</th><th>First year</th><th>Each year after</th></tr></thead>
+      <tbody>
+        <tr><td>Domain name</td><td>You own it. A name you already have is paid to your registrar. A new name we register is inside the first $180.</td><td>Your registrar, or inside the next $180 if we hold the registration for you.</td></tr>
+        <tr><td>Website hosting</td><td>Inside the $180.</td><td>Inside the next $180.</td></tr>
+        <tr><td>SSL certificate</td><td>Inside the $180.</td><td>Inside the next $180.</td></tr>
+        <tr><td>Shop email on our hosting</td><td>$30 a year for each inbox. Three inboxes are $90.</td><td>$30 a year for each inbox.</td></tr>
+        <tr><td>Gmail or Microsoft 365</td><td>You open the account and pay Google or Microsoft. We point the domain to it.</td><td>You pay Google or Microsoft.</td></tr>
+        <tr><td>Updates, speed, security check, backup</td><td>$100 a month, starting the month after launch.</td><td>$100 a month.</td></tr>
+        <tr><td>WordPress and WooCommerce</td><td>$0</td><td>$0</td></tr>
+        <tr><td>A paid plugin</td><td>Only after you approve the price.</td><td>The maker’s renewal, told to you before it is bought.</td></tr>
+        <tr><td>Card company fees</td><td>Paid to that company, if checkout is ever turned on. Not a Creative Tugs fee.</td><td>Same.</td></tr>
+      </tbody>
+    </table>
+    <div class="box">
+      <strong>The $100 a month includes:</strong> software updates, a speed check, a security check, a backup, and up to one hour of small edits. I also send you one short note that month, in plain language, about what I did. You decide what happens next. I reply within two business days. Work past the hour is $75 an hour, and I tell you the hours before I start. Pay the year at once if you prefer: $1,200.
+    </div>
+
+    <h2>6. Google</h2>
+    <p><span class="yes">Included</span> in the $1,900: Google Search Console, a sitemap sent to Google, and a title and a short description on each of the five pages.</p>
+    <p><span class="no">Not included</span>: a promise of a Google ranking, Google ads, and monthly articles. I do not guarantee a position in Google.</p>
+
+    <h2>7. Facebook, Instagram, and Meta</h2>
+    <p>You asked for Instagram. Facebook and Instagram are both run from Meta, so the useful setup is both pages together.</p>
+    <p><span class="maybe">Optional · $350 once.</span> I set up Meta Business, a Facebook page, and an Instagram account. I add the shop name, address, phone, hours, and the link to the website. You own the logins.</p>
+    <p>That price includes 2 or 3 posts, on Facebook and Instagram:</p>
+    <ul>
+      <li>I write the caption.</li>
+      <li>If you have a photo, you send it. If you do not, I make a simple graphic.</li>
+      <li>Nothing goes up until you approve it.</li>
+      <li>I also show you how to read messages in Meta.</li>
+    </ul>
+    <p><span class="maybe">Optional · $200 a month</span> if you want this to continue: one post each week for 12 months, on Facebook and Instagram. Same rules. I write it. You send a photo, or I make a graphic. You approve it. Then I post it. This is not part of the $350, the $1,900, or the $100.</p>
+    <p>Once the pages exist, the monthly $100 note also says if Facebook or Instagram needs a look. New posts are still the optional line above.</p>
+
+    <h2>8. Your review before launch</h2>
+    <p><span class="yes">Included:</span> two designs for the home page. You pick one. Then two rounds of changes on the site. A round is one list of changes, sent together.</p>
+    <p>Another round is $75 an hour. The public site goes live only after you approve it by email.</p>
+
+    <h2>9. What we need, the calls, and the schedule</h2>
+    <p>Our meetings are on Zoom or Google Meet. Creative Tugs works from Manchester, Connecticut, and from our office in Karachi, Pakistan. The person on the call may be in either office.</p>
+    <p><span class="yes">Included</span> in the $1,900: we write the words for the five pages, and the descriptions for up to 25 products, in plain language that fits search. You read them and approve them before launch. You can send any sentence you want kept as it is.</p>
+    <p>Please tell us if you have specific words you want people to find, such as a town or a service. If you have none, we choose simple local phrases from the services you actually offer, and we show you that list before the pages are finished. This is not a promise of a Google ranking.</p>
+    <p>To start the five weeks, send:</p>
+    <ul>
+      <li>The logo file.</li>
+      <li>Photos you have the right to use.</li>
+      <li>The first 25 products in a spreadsheet or a Word document: the name, the price, a photo, and any fact that must be stated. A paper brochure is not the list. We do not copy words or photos from another website.</li>
+      <li>The address, phone, hours, and how many shop inboxes you want at $30 a year each. Or say that you will use Gmail or Microsoft 365.</li>
+      <li>Any keywords you want used, or a note that we should choose them.</li>
+      <li>Any page text you already want kept.</li>
+    </ul>
+    <table>
+      <thead><tr><th>When</th><th>What happens</th></tr></thead>
+      <tbody>
+        <tr><td>Start</td><td>You accept this quote and pay the first $950. The five weeks start when the items above are in.</td></tr>
+        <tr><td>Week 2</td><td>You choose one of the two home-page designs, on Zoom or Google Meet.</td></tr>
+        <tr><td>Weeks 3 and 4</td><td>We build the five pages, the catalog, and the forms on a private link, and send you the words to read.</td></tr>
+        <tr><td>Week 5</td><td>You review it on Zoom or Google Meet. We train you for up to 90 minutes: add a product, remove a product, change a price and a description, edit a page, and open a customer message. You approve by email, pay the second $950 plus the $180, and we launch on the hosting.</td></tr>
+      </tbody>
+    </table>
+    <p><span class="yes">Included for 30 days after launch:</span> I fix anything that does not match this quote. <span class="yes">Then the $100 a month</span> in section 5 is the ongoing support. Outside that hour, the rate is $75 an hour. An extra page is $150.</p>
+
+    <h2>10. What you own, and customer information</h2>
+    <p>You get full administrator access. You control the domain, the pages, the products, and the finished site. WordPress and WooCommerce have no license fee. Any paid plugin stays under that plugin’s license, and I buy it only after you say yes.</p>
+    <p>I also keep an administrator login while I host the site, so I can do the monthly care. You can remove that login when you move the site.</p>
+    <p>To move to another host, I give you a full copy of the site. You point the domain to the new host. I do that once inside the $100, when you ask by email.</p>
+    <p>Customer messages and attached files sit on your website. The site uses an SSL certificate, so documents and customer information are encrypted while they are sent to the shop. The people who can open them are your administrators, and Creative Tugs while we look after the site. The hosting company stores the files. The email service delivers the notice. No other company receives them. We keep each message until you tell us to delete it. We delete it within five business days. This website is not your official firearms record book. That duty stays with Brennan's Guns.</p>
+
+    <h2>11. Creative Tugs, and how to accept</h2>
+    <ul>
+      <li><strong>Business</strong> Creative Tugs · <a href="https://www.creativetugs.com">creativetugs.com</a></li>
+      <li><strong>Contact</strong> Umara Imtiaz · info@creativetugs.com · (860) 356-3525 · (860) 610-8070</li>
+      <li><strong>Connecticut office</strong> 73 Fairfield St #219, Manchester, CT 06040</li>
+      <li><strong>Pakistan office</strong> Karachi. Calls are on Zoom or Google Meet with either office.</li>
+      <li><strong>Platform</strong> WordPress and WooCommerce · <strong>Time</strong> about five weeks</li>
+      <li><a href="https://www.creativetugs.com/portfolio/philtec/">Philtec</a> — a catalog, then an inquiry</li>
+      <li><a href="https://www.creativetugs.com/portfolio/">All Jigsaw Puzzles and Original Grain</a> — shops with a cart</li>
+      <li><a href="https://www.creativetugs.com/portfolio/">Maple Leaf Shredding</a> — request forms</li>
+      <li><a href="https://www.creativetugs.com/portfolio/">All Round Fix</a> — a small-business site the owner updates</li>
+    </ul>
+    <p><strong>Not included:</strong> product photography, a new logo, products after the first 25, legal advice, a promise that a card company will say yes, Google ads, and a promised Google ranking. Entering more products is $75 an hour, agreed before we start. The page wording and the first 25 descriptions are included.</p>
+    <div class="box">
+      To accept, reply by email and say yes to the <strong>$1,900</strong> website, the <strong>$180</strong> a year, and the <strong>$100</strong> a month. Tell us the domain name and whether you already own it, how many inboxes you want at <strong>$30</strong> a year each, the age to show before the shop opens, and any keywords you want used. Add a yes or a no for the <strong>$350</strong> Meta setup, the <strong>$200</strong> a month posting, the <strong>$750</strong> supplier catalog, and any extra pages. We then send the invoice for the first $950 and set a Zoom or Google Meet. At launch you pay the second $950 plus the $180.
+    </div>
+  </article>
+</body>
+</html>
